@@ -6,6 +6,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,7 +26,7 @@ public class Author {
 
     @OneToMany
     private List<Post> posts;
-
+g
     public Author() {
         super();
         this.posts = new ArrayList<Post>();

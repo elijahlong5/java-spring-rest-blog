@@ -42,7 +42,6 @@ public class DatabaseLoader implements ApplicationRunner {
         IntStream.range(0,40).forEach(i->{
             String template = templates[i % templates.length];
             String gadget = gadgets[i % gadgets.length];
-
             Author author = authors.get(i % authors.size());
 
             String title = String.format(template, gadget);
