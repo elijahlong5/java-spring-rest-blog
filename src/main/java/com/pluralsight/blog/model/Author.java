@@ -26,7 +26,7 @@ public class Author {
 
     @OneToMany
     private List<Post> posts;
-g
+
     public Author() {
         super();
         this.posts = new ArrayList<Post>();
